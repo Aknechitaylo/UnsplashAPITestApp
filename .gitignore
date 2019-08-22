@@ -1,0 +1,5 @@
+# Xcode files #
+######################
+**/*.xcodeproj/project.xcworkspace/
+xcuserdata
+!Config.plist
