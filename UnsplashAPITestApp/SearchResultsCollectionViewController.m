@@ -12,9 +12,8 @@
 #import "UIImageView+AFNetworking.h"
 
 
-@interface SearchResultsCollectionViewController ()
 
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndictator;
+@interface SearchResultsCollectionViewController ()
 
 @property (strong, nonatomic) NSMutableArray *photosURLs;
 
@@ -53,7 +52,6 @@
          if (self.photosURLs.count < self.numberOfItems)
              self.numberOfItems = self.photosURLs.count;
          [self.collectionView reloadData];
-         self.activityIndictator.hidden = YES;
      }
      onFailure:^(NSError *error, NSUInteger statusCode) {
          NSLog(@"Error = %@ code = %lu", [error localizedDescription], statusCode);

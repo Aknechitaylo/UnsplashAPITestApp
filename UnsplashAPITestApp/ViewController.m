@@ -14,7 +14,6 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *searchTextField;
-//@property (weak, nonatomic) IBOutlet UIButton *nextButton;
 
 @end
 
